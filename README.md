@@ -1,7 +1,9 @@
 ## Environment setup
 ```
 !git clone https://github.com/Vanhastenghia/FaceSwapping.git
+%cd FaceSwapping
 !pip install -r requirements.txt
+!pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 ## Directories structure
 ```
@@ -23,10 +25,10 @@ DiffFace
 ├── utils
 └── main.py
 ```
-## Quick Inference Using Pretrained Model 
-Place source and target images in data/src, and data/targ. Then run the following. 
+## Using  Model 
+
 ```
-python main.py --output_path output/example
+!python main.py --output_path output/example
 ```
 
 
